@@ -1,0 +1,465 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header{
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/563192ea-ac0e-4906-a865-ba9899ffafad/6b2842d1-2339-4f08-84f6-148e9fcbe01b/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+    no-repeat center center/cover;
+    box-shadow: inset 0 50px 300px #000, inset 0 -50px 300px #000; 
+    border-bottom: 10px #333 solid;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 1rem 2rem;
+    z-index: 1;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 10em;
+    padding: 20px;
+}
+
+.nav-items{
+    padding: 20px;
+}
+
+select,input{
+    margin-right: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #333;    
+}
+
+select{
+    color: #fff;
+    border-style: double;
+    border: #fff 2px;
+}
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background: #e50914;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.inner-container{
+    margin:120px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    line-height: 1.25;
+
+}
+
+.header .inner-title{
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.email-form{
+    margin: 1rem;
+}
+
+.getstarted{
+    display: flex;
+    padding-top: 1.5rem;
+    height: 80%;
+}
+
+
+.getstarted input::placeholder{
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-lg{
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    background: #e50914;
+    font-size: 25px;
+    text-align: center; 
+    border-style: none;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.btn-lg:hover{
+    background: #fd1c27;
+}
+
+
+.inner-text{
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+.getstarted input{
+    padding-left: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #fff;
+    border-radius:5px;
+    outline: none;
+    flex:1;  
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background: black;
+    position:absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.4;
+}
+
+/*Pages*/
+
+.page{
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    border-bottom: 10px #333 solid;
+}
+
+.page-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0 auto;
+    padding: 0 20px;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page-text-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1.5rem;  
+    padding: 2.5rem;
+    text-align:left;
+    white-space: normal;
+    flex: 1;
+}
+
+.page-text-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5rem;  
+    padding: 2.5rem;
+    text-align: left;
+    white-space: normal;
+    flex: 1;
+}
+
+.page-text-left,
+.page-text-right {
+    max-width: 800px; /* Adjust the value based on your design */
+    width: 100%;
+}
+
+
+.page-text-left h1, .page-text-right h1{
+    font-size: 4rem;
+}
+.page-text-left p, .page-text-right p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.page-media-right{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    margin-left: 1.5rem;
+    align-items: center;
+    padding:0 2.5rem;
+}
+
+.page-media-left{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    margin-right: 1.5rem;
+    align-items: center;
+    padding: 0 2.5rem;
+}
+
+/*Page 2*/
+#tvbox{
+    position: relative;
+    z-index:1;
+    width: 100%;
+}
+
+#tv-video{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/*Page 3*/
+
+
+.downloading-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-40%);
+    width: 25rem;
+    height: 100px;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 3px;
+    z-index: 1;
+    background-color: #000;
+    border-color:#333;
+    opacity: 0.98;   
+}
+
+.downloading-box .thumbnail{
+    display: flex;
+    position: relative;
+    width: 70px; 
+    height: 100px;
+    margin-right: 20px;
+}
+
+.thumbnail img{
+    display: flex;
+    position: relative;
+    margin: 10px;
+}
+
+.downloading-text{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.downloading-text .download-name{
+    margin-bottom: 1px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.downloading-box .downloading{
+    color: blue;
+    font-size: 18px;
+    text-align: left;
+}
+
+.downloading-box .download-icon{
+    display: flex;
+    position: relative;
+}
+
+/*Page 4*/
+
+#mac-system{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#mac-screen{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+
+/*Page 6*/
+
+.page6-container{
+    margin:0 auto;
+    border-bottom: 2px #333 solid;
+    padding-bottom: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page6-text{
+    display: flex;
+    flex-direction: column;
+    padding:0 20rem;
+    margin: 3rem 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.page6-text h1{
+    font-size: 4rem;
+}
+
+.faqs-list{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    list-style: none;
+    min-width: 80%;
+    width: auto;
+}
+
+.faqs{
+    margin: 0;
+    padding: 0;
+}
+
+.faq-item{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #333;
+    width: 100%;
+}
+
+.faq-item h3{
+    font-weight: 400;
+    width: 100%;
+    position: relative;
+}
+
+.faq-item button{
+    background-color: #333;
+    border-style: none;
+    font-size: larger;
+    font-weight: 400;
+    display: flex;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    /* margin: 20px; */ /* this was creating problem because  When you add a margin to an element with width: 100%;, it will extend beyond its container due to the box model.*/
+    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.faq-item button span{
+    position:relative;
+    width: auto;
+    text-align: left;
+}
+
+.faq-item button i{
+    float:right;
+}
+
+/*Page 7*/
+
+.page7-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items:center; */
+    justify-content: center;
+    padding: 0 20rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align:left;
+}
+
+.page7-container p{
+    margin:1rem 0;
+    font-size: 1.5rem;
+    width: auto;
+}
+
+.links{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    /* padding: 0 10rem; */
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.links li{
+    width: 25rem;
+    font-size: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    list-style: none;
+    margin: 15px 0 0 15px;
+    /* flex: 0 1 calc(49% - 10px); */
+}
+
+.page7-container a{
+    color: #fff;
+    
+}
+
+.page7-container select{
+    position: relative;
+    border: #fff solid 1px;
+    color: #fff;
+    margin: 0;
+    width: 120px;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #333;  
+}
+
+
