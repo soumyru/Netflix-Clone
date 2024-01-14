@@ -6,7 +6,7 @@ body{
     background-color: #000;
     color: #fff;
     font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
     margin: 0;
@@ -33,13 +33,13 @@ header{
     display: flex;
     flex-direction: row;
     position: relative;
-    padding: 1rem 2rem;
+    padding:0;
     z-index: 1;
-    justify-content: space-between;
+    justify-content:space-around;
 }
 
 .logo img{
-    width: 10em;
+    width: 12em;
     padding: 20px;
 }
 
@@ -49,31 +49,30 @@ header{
 
 select,input{
     margin-right: 20px;
-    padding: 7px;
+    padding: 5px;
     border-radius: 5px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1rem;
     background-color: #333;    
 }
 
-select{
+.language{
     color: #fff;
-    border-style: double;
-    border: #fff 2px;
+    border: #fff double 1px;
 }
 
 .btn{
     text-decoration: none;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 10px;
     background: #e50914;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
 }
 
 .inner-container{
-    margin:120px auto;
+    margin:6rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,30 +80,29 @@ select{
     position: relative;
     z-index: 1;
     line-height: 1.25;
-
 }
 
-.header .inner-title{
+.inner-title{
     text-align: center;
-    font-size: 2rem;
-    
+    font-size: 1.7rem;
+    font-weight: 500;
 }
 
-.email-form{
-    margin: 1rem;
+.inner-title h1,p{
+    margin-bottom: 0;
 }
 
 .getstarted{
     display: flex;
-    padding-top: 1.5rem;
-    height: 80%;
+    padding-top: 1.3rem;
 }
 
 
 .getstarted input::placeholder{
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+    /* z-index: 1; */
 }
 
 .btn-lg{
@@ -112,11 +110,11 @@ select{
     color: #fff;
     margin: 0;
     background: #e50914;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-align: center; 
     border-style: none;
     border-radius: 5px;
-    padding: 20px;
+    padding: 0.6rem;
 }
 
 .btn-lg:hover{
@@ -124,10 +122,10 @@ select{
 }
 
 
-.inner-text{
+/* .inner-text{
     width: 90%;
     font-size: 1.5rem;
-}
+} */
 
 .getstarted input{
     padding-left: 10px;
@@ -138,6 +136,8 @@ select{
     flex:1;  
     opacity: 0.5;
     font-family: Arial, Helvetica, sans-serif; 
+    height: 3.6rem;
+    color: #fff;
 }
 
 .overlay{
@@ -166,7 +166,7 @@ select{
     flex-wrap: wrap;
     margin:0 auto;
     padding: 0 20px;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
     width: 100%;
     min-height: 100vh;
@@ -202,11 +202,11 @@ select{
 
 
 .page-text-left h1, .page-text-right h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 .page-text-left p, .page-text-right p{
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
 }
 
 .page-media-right{
@@ -337,7 +337,6 @@ select{
 .page6-text{
     display: flex;
     flex-direction: column;
-    padding:0 20rem;
     margin: 3rem 0;
     align-items: center;
     justify-content: center;
@@ -411,7 +410,7 @@ select{
     position: relative;
     /* align-items:center; */
     justify-content: center;
-    padding: 0 20rem;
+    padding: 0 2rem;
     width: 100%;
     margin: 0 auto;
     text-align:left;
@@ -419,7 +418,7 @@ select{
 
 .page7-container p{
     margin:1rem 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: auto;
 }
 
@@ -435,8 +434,9 @@ select{
 }
 
 .links li{
-    width: 25rem;
-    font-size: 10px;
+    /* display: flex; */
+    width: 15rem;
+    /* min-width: 5rem; */
     color: #fff;
     font-size: 1.2rem;
     list-style: none;
@@ -446,7 +446,7 @@ select{
 
 .page7-container a{
     color: #fff;
-    
+    font-size: 1rem;
 }
 
 .page7-container select{
@@ -454,11 +454,11 @@ select{
     border: #fff solid 1px;
     color: #fff;
     margin: 0;
-    width: 120px;
-    padding: 8px;
+    width:6rem;
+    padding: 5px;
     border-radius: 5px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1rem;
     background-color: #333;  
 }
 
